@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
       themeMode: ThemeMode.system,
 
       // Navigation Configuration
-      initialRoute: RouteNames.login,
+      initialRoute: RouteNames.careplan,
       onGenerateRoute: AppRouter.generateRoute,
 
       // Handle unknown routes

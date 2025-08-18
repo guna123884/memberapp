@@ -1,0 +1,110 @@
+[
+  {
+    "needCategory": "Clinical Barriers",
+    "programs": [
+      {
+        "programName": "Annual Wellness Visit",
+        "isProgramDisable": false,
+        "education": "",
+        "sortRule": "{\"IntervensionsWorkFlow\":{\"Version\":\"V1\",\"WorkFlow\":[{\"Type\":\"Education\",\"SortOrder\":1,\"IsActive\":true},{\"Type\":\"Evaluate\",\"SortOrder\":2,\"IsActive\":false},{\"Type\":\"Referred To\",\"SortOrder\":3,\"IsActive\":true},{\"Type\":\"Assistance\",\"SortOrder\":4,\"IsActive\":false},{\"Type\":\"Fullfillment\",\"SortOrder\":5,\"IsActive\":true}]}}",
+        "serviceOrganizations": []
+      },
+      {
+        "programName": "Breast Cancer Screening",
+        "isProgramDisable": false,
+        "education": "",
+        "sortRule": "{\"IntervensionsWorkFlow\":{\"Version\":\"V1\",\"WorkFlow\":[{\"Type\":\"Education\",\"SortOrder\":1,\"IsActive\":true},{\"Type\":\"Evaluate\",\"SortOrder\":2,\"IsActive\":false},{\"Type\":\"Referred To\",\"SortOrder\":3,\"IsActive\":true},{\"Type\":\"Assistance\",\"SortOrder\":4,\"IsActive\":false},{\"Type\":\"Fullfillment\",\"SortOrder\":5,\"IsActive\":true}]}}",
+        "serviceOrganizations": []
+      },
+      {
+        "programName": "Cervical Cancer Screening",
+        "isProgramDisable": false,
+        "education": "",
+        "sortRule": "{\"IntervensionsWorkFlow\":{\"Version\":\"V1\",\"WorkFlow\":[{\"Type\":\"Education\",\"SortOrder\":1,\"IsActive\":true},{\"Type\":\"Evaluate\",\"SortOrder\":2,\"IsActive\":false},{\"Type\":\"Referred To\",\"SortOrder\":3,\"IsActive\":true},{\"Type\":\"Assistance\",\"SortOrder\":4,\"IsActive\":false},{\"Type\":\"Fullfillment\",\"SortOrder\":5,\"IsActive\":true}]}}",
+        "serviceOrganizations": []
+      },
+      {
+        "programName": "Chlamydia Test",
+        "isProgramDisable": false,
+        "education": "",
+        "sortRule": "{\"IntervensionsWorkFlow\":{\"Version\":\"V1\",\"WorkFlow\":[{\"Type\":\"Education\",\"SortOrder\":1,\"IsActive\":true},{\"Type\":\"Evaluate\",\"SortOrder\":2,\"IsActive\":false},{\"Type\":\"Referred To\",\"SortOrder\":3,\"IsActive\":true},{\"Type\":\"Assistance\",\"SortOrder\":4,\"IsActive\":false},{\"Type\":\"Fullfillment\",\"SortOrder\":5,\"IsActive\":true}]}}",
+        "serviceOrganizations": []
+      },
+      {
+        "programName": "Colon Cancer Screening",
+        "isProgramDisable": false,
+        "education": "",
+        "sortRule": "{\"IntervensionsWorkFlow\":{\"Version\":\"V1\",\"WorkFlow\":[{\"Type\":\"Education\",\"SortOrder\":1,\"IsActive\":true},{\"Type\":\"Evaluate\",\"SortOrder\":2,\"IsActive\":false},{\"Type\":\"Referred To\",\"SortOrder\":3,\"IsActive\":true},{\"Type\":\"Assistance\",\"SortOrder\":4,\"IsActive\":false},{\"Type\":\"Fullfillment\",\"SortOrder\":5,\"IsActive\":true}]}}",
+        "serviceOrganizations": []
+      },
+      {
+        "programName": "Diabetes Blood Pressure Screening",
+        "isProgramDisable": false,
+        "education": "",
+        "sortRule": "{\"IntervensionsWorkFlow\":{\"Version\":\"V1\",\"WorkFlow\":[{\"Type\":\"Education\",\"SortOrder\":1,\"IsActive\":true},{\"Type\":\"Evaluate\",\"SortOrder\":2,\"IsActive\":false},{\"Type\":\"Referred To\",\"SortOrder\":3,\"IsActive\":true},{\"Type\":\"Assistance\",\"SortOrder\":4,\"IsActive\":false},{\"Type\":\"Fullfillment\",\"SortOrder\":5,\"IsActive\":true}]}}",
+        "serviceOrganizations": []
+      },
+      {
+        "programName": "Diabetes Blood Sugar Screening",
+        "isProgramDisable": false,
+        "education": "",
+        "sortRule": "{\"IntervensionsWorkFlow\":{\"Version\":\"V1\",\"WorkFlow\":[{\"Type\":\"Education\",\"SortOrder\":1,\"IsActive\":true},{\"Type\":\"Evaluate\",\"SortOrder\":2,\"IsActive\":false},{\"Type\":\"Referred To\",\"SortOrder\":3,\"IsActive\":true},{\"Type\":\"Assistance\",\"SortOrder\":4,\"IsActive\":false},{\"Type\":\"Fullfillment\",\"SortOrder\":5,\"IsActive\":true}]}}",
+        "serviceOrganizations": []
+      },
+      {
+        "programName": "Diabetes Eye Exam Screening",
+        "isProgramDisable": false,
+        "education": "",
+        "sortRule": "{\"IntervensionsWorkFlow\":{\"Version\":\"V1\",\"WorkFlow\":[{\"Type\":\"Education\",\"SortOrder\":1,\"IsActive\":true},{\"Type\":\"Evaluate\",\"SortOrder\":2,\"IsActive\":false},{\"Type\":\"Referred To\",\"SortOrder\":3,\"IsActive\":true},{\"Type\":\"Assistance\",\"SortOrder\":4,\"IsActive\":false},{\"Type\":\"Fullfillment\",\"SortOrder\":5,\"IsActive\":true}]}}",
+        "serviceOrganizations": []
+      },
+      {
+        "programName": "Diabetes Kidney Health Screening",
+        "isProgramDisable": false,
+        "education": "",
+        "sortRule": "{\"IntervensionsWorkFlow\":{\"Version\":\"V1\",\"WorkFlow\":[{\"Type\":\"Education\",\"SortOrder\":1,\"IsActive\":true},{\"Type\":\"Evaluate\",\"SortOrder\":2,\"IsActive\":false},{\"Type\":\"Referred To\",\"SortOrder\":3,\"IsActive\":true},{\"Type\":\"Assistance\",\"SortOrder\":4,\"IsActive\":false},{\"Type\":\"Fullfillment\",\"SortOrder\":5,\"IsActive\":true}]}}",
+        "serviceOrganizations": []
+      },
+      {
+        "programName": "Diabetes Medication Management",
+        "isProgramDisable": false,
+        "education": "",
+        "sortRule": "{\"IntervensionsWorkFlow\":{\"Version\":\"V1\",\"WorkFlow\":[{\"Type\":\"Education\",\"SortOrder\":1,\"IsActive\":true},{\"Type\":\"Evaluate\",\"SortOrder\":2,\"IsActive\":false},{\"Type\":\"Referred To\",\"SortOrder\":3,\"IsActive\":true},{\"Type\":\"Assistance\",\"SortOrder\":4,\"IsActive\":false},{\"Type\":\"Fullfillment\",\"SortOrder\":5,\"IsActive\":true}]}}",
+        "serviceOrganizations": []
+      }
+    ]
+  },
+  {
+    "needCategory": "Health Benefits",
+    "programs": [
+      {
+        "programName": "$100-credit for food and OTC products",
+        "isProgramDisable": false,
+        "education": "",
+        "sortRule": "{\"IntervensionsWorkFlow\":{\"Version\":\"V1\",\"WorkFlow\":[{\"Type\":\"Education\",\"SortOrder\":1,\"IsActive\":true},{\"Type\":\"Evaluate\",\"SortOrder\":2,\"IsActive\":false},{\"Type\":\"Referred To\",\"SortOrder\":3,\"IsActive\":false},{\"Type\":\"Assistance\",\"SortOrder\":4,\"IsActive\":false},{\"Type\":\"Fullfillment\",\"SortOrder\":5,\"IsActive\":false}]}}",
+        "serviceOrganizations": []
+      },
+      {
+        "programName": "Gym Membership Reimbursement",
+        "isProgramDisable": false,
+        "education": "",
+        "sortRule": "{\"IntervensionsWorkFlow\":{\"Version\":\"V1\",\"WorkFlow\":[{\"Type\":\"Education\",\"SortOrder\":1,\"IsActive\":true},{\"Type\":\"Evaluate\",\"SortOrder\":2,\"IsActive\":false},{\"Type\":\"Referred To\",\"SortOrder\":3,\"IsActive\":false},{\"Type\":\"Assistance\",\"SortOrder\":4,\"IsActive\":false},{\"Type\":\"Fullfillment\",\"SortOrder\":5,\"IsActive\":false}]}}",
+        "serviceOrganizations": []
+      },
+      {
+        "programName": "Nutrition Coaching",
+        "isProgramDisable": false,
+        "education": "",
+        "sortRule": "{\"IntervensionsWorkFlow\":{\"Version\":\"V1\",\"WorkFlow\":[{\"Type\":\"Education\",\"SortOrder\":1,\"IsActive\":true},{\"Type\":\"Evaluate\",\"SortOrder\":2,\"IsActive\":false},{\"Type\":\"Referred To\",\"SortOrder\":3,\"IsActive\":false},{\"Type\":\"Assistance\",\"SortOrder\":4,\"IsActive\":false},{\"Type\":\"Fullfillment\",\"SortOrder\":5,\"IsActive\":false}]}}",
+        "serviceOrganizations": []
+      },
+      {
+        "programName": "Vision, Dental and Hearing Coverage",
+        "isProgramDisable": false,
+        "education": "",
+        "sortRule": "{\"IntervensionsWorkFlow\":{\"Version\":\"V1\",\"WorkFlow\":[{\"Type\":\"Education\",\"SortOrder\":1,\"IsActive\":true},{\"Type\":\"Evaluate\",\"SortOrder\":2,\"IsActive\":false},{\"Type\":\"Referred To\",\"SortOrder\":3,\"IsActive\":false},{\"Type\":\"Assistance\",\"SortOrder\":4,\"IsActive\":false},{\"Type\":\"Fullfillment\",\"SortOrder\":5,\"IsActive\":false}]}}",
+        "serviceOrganizations": []
+      }
+    ]
+  }
+]
