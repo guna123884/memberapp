@@ -195,7 +195,7 @@ class AppTheme {
     surfaceContainerHighest: AppColors.surfaceVariant,
     onSurfaceVariant: AppColors.gray700,
     outline: AppColors.gray600,
-    shadow: Colors.black26,
+    shadow: Colors.black,
     inverseSurface: AppColors.gray800,
     onInverseSurface: Colors.white,
     inversePrimary: AppColors.cyan,

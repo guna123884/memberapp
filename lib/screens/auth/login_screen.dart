@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/utils/helpers/navigation_helper.dart';
+import 'package:flutter/services.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -10,15 +11,15 @@ class LoginScreen extends StatefulWidget {
 
 class _LoginScreenState extends State<LoginScreen> {
   final _formKey = GlobalKey<FormState>();
-  final _emailController = TextEditingController(text: 'maheshsd@gmail.com1');
   final _passwordController = TextEditingController(text: "");
+  final _lastNameController = TextEditingController(text: "");
+
   bool _isLoading = false;
-  bool _obscurePassword = true;
 
   @override
   void dispose() {
-    _emailController.dispose();
     _passwordController.dispose();
+    _lastNameController.dispose();
     super.dispose();
   }
 
@@ -55,84 +56,70 @@ class _LoginScreenState extends State<LoginScreen> {
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
-                Image.asset('assets/icons/logoGGH.png', height: 80),
-                const SizedBox(height: 32),
-
+                Image.asset('assets/images/icons/logoGGH.png', height: 80),
+                Image.asset(
+                  'assets/images/icons/verification.png',
+                  height: 140,
+                ),
                 Text(
-                  'Welcome Back',
-                  style: Theme.of(context).textTheme.headlineMedium?.copyWith(
-                    fontWeight: FontWeight.bold,
+                  'To access your care plan, please enter your date of birth and last name.',
+                  style: Theme.of(context).textTheme.bodyLarge?.copyWith(
                     color: Theme.of(context).colorScheme.primary,
                   ),
                   textAlign: TextAlign.center,
                 ),
-                const SizedBox(height: 8),
-
-                Text(
-                  'Sign in to continue to your account',
-                  style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                    color: Theme.of(
-                      context,
-                    ).colorScheme.onSurface.withValues(alpha: 0.7),
-                  ),
-                  textAlign: TextAlign.center,
-                ),
-                const SizedBox(height: 48),
-
-                // Email Field
-                TextFormField(
-                  controller: _emailController,
-                  keyboardType: TextInputType.emailAddress,
-                  decoration: const InputDecoration(
-                    labelText: 'Email',
-                    prefixIcon: Icon(Icons.email_outlined),
-                    hintText: 'Enter your email',
-                  ),
-                  validator: (value) {
-                    if (value == null || value.isEmpty) {
-                      return 'Please enter your email';
-                    }
-                    if (!value.contains('@')) {
-                      return 'Please enter a valid email';
-                    }
-                    return null;
-                  },
-                ),
-                const SizedBox(height: 16),
-
-                // Password Field
+                const SizedBox(height: 24),
+                // Date of Birth Field
                 TextFormField(
                   controller: _passwordController,
-                  obscureText: _obscurePassword,
+
                   decoration: InputDecoration(
-                    labelText: 'Password',
-                    prefixIcon: const Icon(Icons.lock_outlined),
-                    suffixIcon: IconButton(
-                      icon: Icon(
-                        _obscurePassword
-                            ? Icons.visibility
-                            : Icons.visibility_off,
-                      ),
-                      onPressed: () {
-                        setState(() {
-                          _obscurePassword = !_obscurePassword;
-                        });
-                      },
-                    ),
-                    hintText: 'Enter your password',
+                    labelText: 'Date of Birth (MMDDYYYY)',
+                    prefixIcon: const Icon(Icons.calendar_today_outlined),
+                    hintText: 'Enter your date of birth',
                   ),
+                  keyboardType: TextInputType.number,
+                  inputFormatters: [
+                    FilteringTextInputFormatter.digitsOnly,
+                    LengthLimitingTextInputFormatter(8),
+                  ],
                   validator: (value) {
                     if (value == null || value.isEmpty) {
-                      return 'Please enter your password';
+                      return 'Please enter your date of birth';
                     }
-                    if (value.length < 6) {
-                      return 'Password must be at least 6 characters';
+                    if (!RegExp(r'^\d{8}$').hasMatch(value)) {
+                      return 'Date of birth must be in MMDDYYYY format';
                     }
                     return null;
                   },
                 ),
-                const SizedBox(height: 32),
 
+                const SizedBox(height: 20),
+                TextFormField(
+                  controller: _lastNameController,
+
+                  decoration: InputDecoration(
+                    labelText: 'Last Name',
+                    prefixIcon: const Icon(Icons.person_outline),
+                    hintText: 'Enter your last name',
+                  ),
+                  keyboardType: TextInputType.name,
+                  inputFormatters: [
+                    FilteringTextInputFormatter.allow(RegExp('[a-zA-Z]')),
+                    LengthLimitingTextInputFormatter(20),
+                  ],
+                  validator: (value) {
+                    if (value == null || value.isEmpty) {
+                      return 'Please enter your last name';
+                    }
+                    if (!RegExp(r'^[a-zA-Z]+$').hasMatch(value)) {
+                      return 'Last name must contain only letters';
+                    }
+                    return null;
+                  },
+                ),
+
+                const SizedBox(height: 32),
                 // Login Button
                 SizedBox(
                   height: 48,
@@ -152,7 +139,6 @@ class _LoginScreenState extends State<LoginScreen> {
                         : const Text('Login'),
                   ),
                 ),
-                const SizedBox(height: 16),
               ],
             ),
           ),
